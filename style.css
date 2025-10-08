@@ -1,0 +1,131 @@
+.page-container {
+    background-color: #ffffff; 
+  /* Set your desired background color */
+    padding: 20px; 
+  /* Adjust as needed */
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+  /* Set the background color for your grid items */
+    border: 1px solid black; 
+  /* Add border for clarity */
+    padding: 20px; 
+  /* Add padding for spacing */
+  }
+
+  /* Other styles for your text or objects can be added here */
+  .grid-container {
+  display: grid;
+    grid-template-columns: repeat(3, 3fr);/* Adjust the number of columns */
+    gap: 10px; /* Adjust the gap between items */
+  background-color: #3a4a3f; /* deep army green */
+  border: 4px solid #1a1a1a;
+  border-radius: 12px;
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+
+  /* allow resizing */
+  resize: both;
+  overflow: auto;
+}
+
+/*.container1 {
+  top: 900;
+  left: 400;
+}
+.container2 {
+  top: 50;
+  right: 50;
+}
+.container3 {
+  bottom: 0;
+  left: 0;
+}
+.container4 {
+  bottom: 500;
+  right: 500;
+}*/
+    /* Adjust the gap between items */
+.chatbox {
+  background-color: #2e2e2e;
+  border: 2px solid #d4af37;
+  border-radius: 6px;
+  padding: 10px;
+  min-height: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column; /* stack messages + form vertically */
+  font-size: 14px;
+  color: #f4f4f4;
+
+
+}
+
+#messages {
+  flex: 1;                /* take up remaining space */
+  overflow-y: auto;        /* scroll only this section */
+  padding-right: 5px;      /* breathing room */
+}
+
+#messages div {
+  margin-bottom: 10px;
+}
+
+#chatForm {
+  display: flex;
+  margin-top: 10px;
+  flex-shrink: 0; /* keep form pinned at bottom */
+}
+
+#messages div {
+  margin-bottom: 10px;
+}
+
+.user-msg {
+  color: #9acd32; /* yellow-green for user text */
+}
+
+.alpaca-msg {
+  color: #d4af37; /* gold for ALPACA replies */
+  font-style: italic;
+}
+
+#chatForm {
+  display: flex;
+  margin-top: 10px;
+}
+
+#userInput {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #1a1a1a;
+  border-radius: 6px;
+  background-color: #3a4a3f;
+  color: #f4f4f4;
+}
+
+#userInput::placeholder {
+  color: #bbb;
+}
+
+button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #d4af37;
+  border: none;
+  border-radius: 6px;
+  color: #1a1a1a;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #b8860b;
+}
